@@ -1,0 +1,4 @@
+console.log("starting test")
+setTimeout(() =>console.log("waiting 3 seconds..."), 3000)
+console.log("starting test 2")
+setTimeout(() =>console.log("waiting 3 seconds..."), 3000)
