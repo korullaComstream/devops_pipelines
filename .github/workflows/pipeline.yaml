@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check Node.js
+        uses: nodejs/is-my-node-vulnerable@v1
+      
       - name: chekout code
         uses: actions/checkout@v5
 
@@ -22,3 +25,5 @@ jobs:
 
       - name: run tests
         run: npm test
+
+      
